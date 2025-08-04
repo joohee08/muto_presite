@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/* ================================
+   Reset & 기본 설정
+================================= */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  color: #333;
+  background: #fff;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+.hidden {
+  display: none !important;
+} */
+
+/* ================================
+   Typography 유틸 클래스
+================================= */
+/* px */
+.fs10 { font-size: 10px !important; }
+.fs12 { font-size: 12px !important; }
+.fs14 { font-size: 14px !important; }
+.fs16 { font-size: 16px !important; }
+.fs18 { font-size: 18px !important; }
+.fs20 { font-size: 20px !important; }
+.fs24 { font-size: 24px !important; }
+.fs30 { font-size: 30px !important; }
+.fs40 { font-size: 40px !important; }
+
+/* % */
+.fsp5{font-size: 5% !important;}
+.fsp10{font-size: 10% !important;}
+.fsp15{font-size: 15% !important;}
+.fsp20{font-size: 20% !important;}
+.fsp25{font-size: 25% !important;}
+.fsp30{font-size: 30% !important;}
+.fsp35{font-size: 35% !important;}
+.fsp40{font-size: 40% !important;}
+.fsp45{font-size: 45% !important;}
+.fsp50{font-size: 50% !important;}
+
+/* 폰트 굵기 */
+.fw300 { font-weight: 300 !important; }
+.fw400 { font-weight: 400 !important; }
+.fw500 { font-weight: 500 !important; }
+.fw600 { font-weight: 600 !important; }
+.fw700 { font-weight: 700 !important; }
+.fwb { font-weight: bold !important; }
+
+/* 문단 간격 */
+.lh100 { line-height: 1 !important; }
+.lh120 { line-height: 1.2 !important; }
+.lh150 { line-height: 1.5 !important; }
+.lh200 { line-height: 2 !important; }
+
+/* ================================
+   Margin / Padding 유틸 클래스
+================================= */
+.m0 { margin: 0 !important; }
+
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt40 { margin-top: 40px !important; }
+.mt50 { margin-top: 50px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+
+.ml10 { margin-left: 10px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml30 { margin-left: 30px !important; }
+.ml40 { margin-left: 40px !important; }
+.ml50 { margin-left: 50px !important; }
+
+.mr10 { margin-right: 10px !important; }
+.mr20 { margin-right: 20px !important; }
+.mr30 { margin-right: 30px !important; }
+.mr40 { margin-right: 40px !important; }
+.mr50 { margin-right: 50px !important; }
+
+.p0 { padding: 0 !important; }
+
+.pt10 { padding-top: 10px !important; }
+.pt20 { padding-top: 20px !important; }
+.pt30 { padding-top: 30px !important; }
+.pt40 { padding-top: 40px !important; }
+.pt50 { padding-top: 50px !important; }
+
+.pb10 { padding-bottom: 10px !important; }
+.pb20 { padding-bottom: 20px !important; }
+.pb30 { padding-bottom: 30px !important; }
+.pb40 { padding-bottom: 40px !important; }
+.pb50 { padding-bottom: 50px !important; }
+
+.pl10 { padding-left: 10px !important; }
+.pl20 { padding-left: 20px !important; }
+.pl30 { padding-left: 30px !important; }
+.pl40 { padding-left: 40px !important; }
+.pl50 { padding-left: 50px !important; }
+
+.pr10 { padding-right: 10px !important; }
+.pr20 { padding-right: 20px !important; }
+.pr30 { padding-right: 30px !important; }
+.pr40 { padding-right: 40px !important; }
+.pr50 { padding-right: 50px !important; }
+
+/* 포지션*/
+.po-ab{position: absolute!important;}
+.po-rel{position: relative!important;}
+.po-fix{position: fixed!important;}
+
+
+/* ================================
+   Flex 유틸
+================================= */
+.flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.flex-row { flex-direction: row !important; }
+.jc-sb { justify-content: space-between !important; }
+.jc-c { justify-content: center !important; }
+.ai-c { align-items: center !important; }
+.wrap { flex-wrap: wrap !important; }
+
+/* ================================
+   Text Align
+================================= */
+.ta-l { text-align: left !important; }
+.ta-c { text-align: center !important; }
+.ta-r { text-align: right !important; }
+
+/* ================================
+   Color
+================================= */
+.text-black { color: #000 !important; }
+.text-white { color: #fff !important; }
+.text-gray { color: #888 !important; }
+.bg-black { background-color: #000 !important; }
+.bg-white { background-color: #fff !important; }
+.bg-gray { background-color: #f2f2f2 !important; }
+
+/* ================================
+   Width / Height
+================================= */
+/* px */
+.w50 { width: 50px !important; }
+.w100 { width: 100px !important; }
+.w150 { width: 150px !important; }
+.w200 { width: 200px !important; }
+.w250 { width: 250px !important; }
+.w300 { width: 300px !important; }
+.w350 { width: 350px !important; }
+.w400 { width: 400px !important; }
+.w450 { width: 450px !important; }
+.w500 { width: 500px !important; }
+.w700 { width: 700px !important; }
+.w800 { width: 800px !important; }
+.w1000 { width: 1000px !important; }
+.w1500 { width: 1500px !important; }
+
+
+/* % */
+.w10p { width: 10% !important; }
+.w50p { width: 50% !important; }
+.w100p { width: 100% !important; }
+.w150p { width: 150% !important; }
+.w200p { width: 200% !important; }
+.w250p { width: 250% !important; }
+.w300p { width: 300% !important; }
+.w350p { width: 350% !important; }
+.w400p { width: 400% !important; }
+.w450p { width: 450% !important; }
+.w500p { width: 500% !important; }
+
+/* px */
+.h10 { height: 10px !important; }
+.h20 { height: 20px !important; }
+.h30 { height: 30px !important; }
+.h50 { height: 50px !important; }
+.h70 { height: 70px !important; }
+.h100 { height: 100px !important; }
+.h200 { height: 200px !important; }
+.h300 { height: 300px !important; }
+.h500 { height: 500px !important; }
+.h700 { height: 700px !important; }
+.h800 { height: 800px !important; }
+.h900 { height: 900px !important; }
+.h1000 { height: 1000px !important; }
+
+/* % */
+.h50p { height: 50% !important; }
+.h100p { height: 100% !important; }
+.h150p { height: 150% !important; }
+.h200p { height: 200% !important; }
+.h300p { height: 300% !important; }
+.h500p { height: 500% !important; }
+.h700p { height: 700% !important; }
+
+.max-w-screen { max-width: 100vw !important; }
+.max-h-screen { max-height: 100vh !important; }
+
+.gap10{gap: 10px!important;}
+.gap15{gap: 15px!important;}
+.gap20{gap: 20px!important;}
+.gap25{gap: 25px!important;}
+.gap30{gap: 30px!important;}
+.gap35{gap: 35px!important;}
+.gap40{gap: 40px!important;}
+.ga45{gap: 45px!important;}
+.gap50{gap: 50px!important;}
+
+/* ================================
+   기타
+================================= */
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded {
+  border-radius: 8px !important;
+}
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
